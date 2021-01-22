@@ -18,6 +18,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'general',
+        message: 'General info of project:'
+    },
+    {
+        type: 'input',
         name: 'link',
         message: 'Link to deployed application:'
     },
@@ -28,11 +33,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'credit',
-        message: 'Contributors:'
-    },
-    {
-        type: 'input',
         name: 'installation',
         message: 'How to install:'
     },
@@ -40,6 +40,16 @@ const questions = [
         type: 'input',
         name: 'usage',
         message: 'How to use application:'
+    },
+    {
+        type: 'input',
+        name: 'technologies',
+        message: 'Technologies used to create project:'
+    },
+    {
+        type: 'input',
+        name: 'summary',
+        message: 'Summary:'
     },
     {
         type: 'input',

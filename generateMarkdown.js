@@ -35,11 +35,55 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({title, license, description}) {
-  return `# ${title} \n
-  license: ${renderLicenseSection(license)} \n
-  description: ${description} \n
+function generateMarkdown({title, description, general, link, prerequisites, installation, usage, technologies, summary, credit, username, email, license}) {
+  return `# ${title}
   
+  ${description}
+
+  ## Table of Contents
+  - [General Info](#General-Info)
+  - [Link to Deployed Application](#Link-to-deployed-application)
+  - [Prerequisites](#Prerequisites)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Technologies](#Technologies)
+  - [Summary](#Summary)
+  - [Contributors](#Contributors)
+  - [Contact Information](#Contact-Information)
+
+  ## General Info
+  My project meets the following criteria:
+  - ${general}
+
+  ## Link to deployed application
+  - ${link}
+
+  ## Prerequisites
+  - ${prerequisites}
+
+  ## Installation
+  - ${installation}
+
+  ## Usage
+  - ${usage}
+
+  ## Technologies
+
+  This project is created with:
+  - ${technologies}
+
+  ## Summary
+  - ${summary}
+
+  ## Contributors
+  - ${credit}
+
+  ## Contact Information
+  - ${username}
+  - ${email}
+
+
+  ${renderLicenseSection(license)}
 `;
 }
 
